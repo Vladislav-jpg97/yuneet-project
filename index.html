@@ -1,343 +1,116 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="xzz" translate="no">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-        :root {
-            --font-montserrat: "Montserrat", sans-serif;
-            --green-1: #00c470;
-            --green-2: #15D784;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/global.css">
 </head>
-
-<body class="flex flex-col justify-between min-h-screen font-[var(--font-montserrat)]">
-    <nav class="fixed top-[20px] left-0 right-0">
-        <div class="container px-[15px] mx-auto">
-            <div class="flex justify-between items-center">
-                <!-- button left -->
-                <button type="button"
-                    class="bg-white inline-flex rounded-full px-[20px] py-[21.5px] justify-center items-center flex-col">
-                    <span class="inline-block w-[20px] rounded-[20px] h-[3px] bg-black mb-[3px]"></span>
-                    <span class="inline-block w-[20px] rounded-[20px] h-[3px] bg-black mb-[3px]"></span>
-                    <span class="inline-block w-[20px] rounded-[20px] h-[3px] bg-black"></span>
-                </button>
-                <!--  -->
-                <!-- button right -->
-                <button type="button"
-                    class="bg-white inline-flex rounded-full px-[20px] py-[21.5px] justify-center items-center flex-col">
-                    <img src="./img/search.svg" alt="Поиск" />
-                </button>
-                <!--  -->
+<body class="body">
+    <section class="products">
+        <div class="container">
+            <div class="product-header">
+                <h1 class="title-1">
+                    New Products
+                </h1>
+                <p class="subtitle">
+                    DOLOR SIT AMET
+                </p>
             </div>
-        </div>
-    </nav>
-    <header class="min-h-[678px] bg-black/40 bg-[url(/img/header-bg.jpg)] bg-cover bg-center pt-[110px] pb-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <h1 class="text-[70px] font-bold text-center text-white mb-[30px] font-inherit ">
-                ЮНИТ
-            </h1>
-            <p class="text-white text-[16px] font-bold text-center font-inherit mb-[30px]">
-                Управляй задачами и проектами из любой точки вместе с ЮНИТ. Дома. На
-                работе. В дороге. Онлайн. Оффлайн.
-            </p>
-            <!-- .class> *+ * -->
-            <form class="space-y-[20px] mb-[50px]">
-
-                <input type="text" placeholder="Ваше имя" name="username" class="inline-block w-full py-[21px] px-[36px] bg-black/75 text-white
-                font-inherit rounded-[30px] placeholder:text-white font-bold">
-
-                <input type="email" placeholder="Email" name="email" class="inline-block w-full py-[21px] px-[36px] bg-black/75 text-white
-                font-inherit rounded-[30px] placeholder:text-white font-bold">
-
-                <button type="submit"
-                    class="inline-block w-full p-[21px] rounded-[30px] bg-[var(--green-1)] uppercase text-white font-extrabold tracking-[4px] text-[14px]">
-                    начать триал
-                </button>
-            </form>
-
-            <div class="text-center">
-                <a href="#functional" class="inline-block w-[32px] ">
-
-                    <img src="./img/anchor.svg" alt="anchor" class="">
-                </a>
-            </div>
-
-
-        </div>
-    </header>
-
-    <section class="py-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <p class="text-[var(--green-2)] text-[14px] tracking-[4px] uppercase font-bold text-center mb-[10px]">
-                функционал</p>
-
-            <h2 class=" font-inherit font-bold text-[26px] text-center text-[#2E2E2E] mb-[40px]">Получайте больше</h2>
-            <ul class="space-y-[40] ">
-                <li class="text-center">
-                    <div class="w-[64px] mx-auto mb-[20px]">
-                        <img src="./img/file check.svg" alt="file" class="w-full h-full block mb-[20px]">
+            <ul class="product-list">
+                <li class="product con">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
                     </div>
-                    <h3 class="leading-[150%] text-[16px] mb-[10px] text-[#2E2E2E] font-bold">
-                        Создан для управления
+                    <h3 class="product-title">
+                        Cotton Skirt
                     </h3>
-
-                    <p class="leading-[1.6] text-[14px] text-[#808080] mb-[40px]">
-                        Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
                     </p>
                 </li>
-
-                <li class="text-center">
-                    <div class="w-[64px] mx-auto mb-[20px]">
-                        <img src="./img/micro.svg" alt="micro" class="w-full h-full block">
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
                     </div>
-                    <h3 class="leading-[150%] text-[16px] mb-[10px] text-[#2E2E2E] font-bold mb-[20px]">
-                        Голосовое управление
+                    <h3 class="product-title">
+                        Cotton Skirt
                     </h3>
-
-                    <p class="leading-[1.6] text-[14px] text-[#808080] mb-[40px]">
-                        Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
                     </p>
                 </li>
-
-                <li class="text-center">
-                    <div class="w-[64px] mx-auto mb-[20px]">
-                        <img src="./img/photo.svg" alt="photo" class="w-full h-full block">
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
                     </div>
-                    <h3 class="leading-[150%] text-[16px] mb-[10px] text-[#2E2E2E] font-bold mb-[20px]">
-                        Статистика и графики
+                    <h3 class="product-title">
+                        Cotton Skirt
                     </h3>
-
-                    <p class="leading-[1.6] text-[14px] text-[#808080] mb-[40px]">
-                        Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
+                    </p>
+                </li>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
+                    </div>
+                    <h3 class="product-title">
+                        Cotton Skirt
+                    </h3>
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
+                    </p>
+                </li>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
+                    </div>
+                    <h3 class="product-title">
+                        Cotton Skirt
+                    </h3>
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
+                    </p>
+                </li>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
+                    </div>
+                    <h3 class="product-title">
+                        Cotton Skirt
+                    </h3>
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
+                    </p>
+                </li>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
+                    </div>
+                    <h3 class="product-title">
+                        Cotton Skirt
+                    </h3>
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
+                    </p>
+                </li>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="./img/img1.png" alt="картинка с девушкой" class="product-pic">
+                    </div>
+                    <h3 class="product-title">
+                        Cotton Skirt
+                    </h3>
+                    <p class="product-price">
+                        <del class="old-price">$100</del><strong class="new-price">$90</strong>
                     </p>
                 </li>
             </ul>
-
-        </div>
-
-    </section>
-
-    <section class="bg-[url(/img/bg-3.jpg)] bg-cover bg-center py-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <h2 class=" font-inherit font-[500] text-[18px] text-center text-white mb-[40px] leading-[100%]">Начните
-                использовать
-                ЮНИТ уже сегодня.</h2>
-            <button type="submit"
-                class="inline-block w-full p-[21px] rounded-[30px] bg-[var(--green-1)] uppercase text-white font-extrabold tracking-[4px] text-[14px]">
-                подключить
+            <button class="button">
+                BROWSE ALL ITEMS
             </button>
         </div>
     </section>
-
-    <section class="pt-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <div class="w-[270px] mx-auto mb-[10px]">
-                <img src="./img/iPhone X Mockup 1.jpg" alt="iphon">
-            </div>
-            <div class="mb-[40px] mx-auto">
-                <p class="text-[var(--green-2)] text-[14px] tracking-[4px] uppercase font-bold text-center mb-[10px]">
-                    гибкое управление</p>
-
-                <h2 class=" font-inherit font-bold text-[26px] text-center text-[#2E2E2E] mb-[40px]">Задачи и подзадачи
-                </h2>
-
-                <p class="leading-[1.7] text-[14px] text-[#808080] text-center">
-                    Тактика выстраивания отношений с коммерчекими агентами, вопреки мнению П.Друкера, искажает
-                    продвигаемый
-                    отраслевой стандарт. Стратегический рыночный план традиционно масштабирует комплексный имидж.
-                    Спонсорство
-                    развивает формат события.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="pb-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <div class="w-[270px] mx-auto mb-[10px]">
-                <img src="./img/iPad Pro 11 Inches 2.jpg" alt="iPad">
-            </div>
-            <div class="mb-[40px] mx-auto">
-                <p class="text-[var(--green-2)] text-[14px] tracking-[4px] uppercase font-bold text-center mb-[10px]">
-                    всегда в фокусе</p>
-
-                <h2 class=" font-inherit font-bold text-[26px] text-center text-[#2E2E2E] mb-[40px]">Множественные
-                    приоритеты
-                </h2>
-
-                <p class="leading-[1.7] text-[14px] text-[#808080] mb-[40px] text-center">
-                    Потребление существенно продуцирует рыночный традиционный канал. В соответствии с законом Ципфа,
-                    маркетинг основан на тщательном анализе данных. Наряду с этим, целевой трафик конкурентоспособен.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="bg-[url(/img/bg-4.jpg)] bg-cover bg-center py-[40px] ">
-        <div class="container mx-auto px-[15px]">
-            <p class="text-white text-[14] leading-[1] text-center font-[bold] tracking-[4] mb-[10px]">цены</p>
-            <h2 class="font-bold text-[26px] leading-[1] text-center text-white mb-[40px]">
-                Выберите<br>подходящий план
-            </h2>
-            <div class="py-[40px] bg-black/75 text-white text-center rounded-[8px] mb-[30px]">
-                <p class="text-[16px] leading-[1] tracking-[4px] font-bold text-[#B2B2B2] mb-20px">БАЗОВЫЙ</p>
-                <p class="font-bold text-[80px] leading-[1] tracking-[4px] mb-[15px]">15</p>
-                <span
-                    class="font-bold text-[12px] leading-[1] tracking-[4] bg-[#FFFFFF]/10 py-[6px] px-[15.3px] rounded-[30px]">$/мес</span>
-                <div class="mt-[40px] mb-[58px]">
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">10 проектов</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">5 участников</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">∞ количество задач</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">5 GB медиа хранилище</p>
-                    <p class="font-[500] text-[16px] leading-[1]">Поддержка по Email</p>
-
-                </div>
-                <button
-                    class="text-white font-[800] text-[14px] leading-[1] tracking-[4px] rounded-[30px] border-1 border-white/20 w-[180px] h-[60px]">ВЫБРАТЬ</button>
-            </div>
-
-            <div class="py-[40px] bg-[#304FFE]/95 text-white text-center rounded-[8px] mb-[25px]">
-                <p class="text-[16px] leading-[1] tracking-[4px] font-bold text-[#B2B2B2] mb-20px">СТАНДАРТ</p>
-                <p class="font-bold text-[80px] leading-[1] tracking-[4px] mb-[15px]">65</p>
-                <span
-                    class="font-bold text-[12px] leading-[1] tracking-[4] bg-[#FFFFFF]/10 py-[6px] px-[15.3px] rounded-[30px]">$/мес</span>
-                <div class="mt-[40px] mb-[58px]">
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">50 проектов</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">10 участников</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">∞ количество задач</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">25 GB медиа хранилище</p>
-                    <p class="font-[500] text-[16px] leading-[1]">Поддержка по Email</p>
-
-                </div>
-                <button
-                    class="text-white font-[800] text-[14px] leading-[1] tracking-[4px] rounded-[30px] border-1 border-white/20 w-[180px] h-[60px]">ВЫБРАТЬ</button>
-            </div>
-
-            <div class="py-[40px] bg-black/75 text-white text-center rounded-[8px]">
-                <p class="text-[16px] leading-[1] tracking-[4px] font-bold text-[#B2B2B2] mb-20px">ПРЕМИУМ</p>
-                <p class="font-bold text-[80px] leading-[1] tracking-[4px] mb-[15px]">125</p>
-                <span
-                    class="font-bold text-[12px] leading-[1] tracking-[4] bg-[#FFFFFF]/10 py-[6px] px-[15.3px] rounded-[30px]">$/мес</span>
-                <div class="mt-[40px] mb-[58px]">
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">100 проектов</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">30 участников</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">∞ количество задач</p>
-                    <p class="font-[500] text-[16px] leading-[1] mb-[25px]">50 GB медиа хранилище</p>
-                    <p class="font-[500] text-[16px] leading-[1]">Поддержка по Email</p>
-
-                </div>
-                <button
-                    class="text-white font-[800] text-[14px] leading-[1] tracking-[4px] rounded-[30px] border-1 border-white/20 w-[180px] h-[60px]">ВЫБРАТЬ</button>
-            </div>
-        </div>
-
-
-
-    </section>
-
-    <section class="py-[40px]">
-        <div class="container mx-auto px-[15px]">
-            <p class="text-[var(--green-2)] text-[14px] tracking-[4px] uppercase font-bold text-center mb-[10px]">
-                наши клиенты</p>
-            <h2 class=" font-inherit font-[700] text-[26px] text-center text-[#2E2E2E] mb-[30px]">Что
-                говорят<br>пользователи
-            </h2>
-            <p class="font-500 text-[14px] text-[#000000] leading-150% text-center mb-[20px]">
-                Это потрясающее приложение<br>которое помогло мне завершить все<br>мои дела, и сделать
-                дипломный<br>проект раньше
-                срока.
-            </p>
-            <div class="flex justify-center items-center text-start">
-                <div class="mr-[10px]">
-                    <img src="./img/Ellipse 3.jpg" alt="фото человека">
-                </div>
-
-                <div class="">
-                    <p class="text-[var(--green-2)] text-[14px] font-[500] leading-5">
-                        Фрилансер</p>
-                    <p class="font-500 text-[14px] text-[#808080]">
-                        Николай Остапов
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-
-
-
-
-
-    </section>
-
-    <footer class="bg-[#1A1A1A] py-[40px]">
-        <div class="container container mx-auto px-[15px]">
-            <div class="text-[#fff] flex flex-col mb-[40px] w-[127px] mx-auto  text-center ">
-                <a class="hover:text-[#15D784] duration-300 ease-in" href="#">
-                    <span class="leading-1 tracking-[4px] text-[16px] font-[700] ">О НАС</span>
-                </a>
-                <a class="my-[20px] hover:text-[#15D784] duration-300 ease-in" href="#">
-                    <span class="leading-1 tracking-[4px] text-[16px] font-[700]">БЛОГ</span>
-                </a>
-                <a class="hover:text-[#15D784] duration-300 ease-in" href="#">
-                    <span class="leading-1 tracking-[4px] text-[16px] font-[700]">КОНТАКТ</span>
-                </a>
-            </div>
-
-            <div class="mb-[40px] mx-[34px] flex justify-between w-[252px] mx-auto ">
-                <div class="w-[48px] h-[48px] bg-[#C4C4C4]/10 rounded-[50%]">
-                    <a class="w-full h-full flex justify-center items-center rounded-[50%] hover:bg-[#15D784] duration-300 ease-in"
-                        href="#!">
-                        <img class="" src="./img/twit.svg" alt="twit">
-                    </a>
-                </div>
-
-                <div class="w-[48px] h-[48px] bg-[#C4C4C4]/10 rounded-[50%]">
-                    <a class="w-full h-full flex justify-center items-center rounded-[50%] hover:bg-[#15D784] duration-300 ease-in"
-                        href="#!">
-                        <img class="" src="./img/fb.svg" alt="fb">
-                    </a>
-                </div>
-
-                <div class="w-[48px] h-[48px] bg-[#C4C4C4]/10 rounded-[50%]">
-                    <a class="w-full h-full flex justify-center items-center rounded-[50%] hover:bg-[#15D784] duration-300 ease-in"
-                        href="#!">
-                        <img class="" src="./img/inst.svg" alt="inst">
-                    </a>
-                </div>
-
-                <div class="w-[48px] h-[48px] bg-[#C4C4C4]/10 rounded-[50%]">
-                    <a class="w-full h-full flex justify-center items-center rounded-[50%] hover:bg-[#15D784] duration-300 ease-in"
-                        href="#!">
-                        <img class="" src="./img/vk.svg" alt="vk">
-                    </a>
-                </div>
-            </div>
-
-            <div>
-                <p class="font-[500] text-[14px] leading-150% text-[#fff]/30 text-center ">
-                    Копирайт © 2019 ЮНИТ. <br>Все права защищены.
-                </p>
-
-            </div>
-        </div>
-
-
-
-
-    </footer>
-    <!-- LIBS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss-browser/4.1.13/index.global.min.js"
-        integrity="sha512-TscjjxDy2iXx5s55Ar78c01JDHUug0K5aw4YKId9Yuocjx3ueX/X9PFyH5XNRVWqagx3TtcQWQVBaHAIPFjiFA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-
-
 </body>
-
 </html>

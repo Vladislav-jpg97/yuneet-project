@@ -1,0 +1,122 @@
+/* Обнуляем значени */
+*,
+*::after,
+ *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: inherit;  
+}
+
+
+input,
+label,
+span,
+a,
+textarea,
+button {
+    display: inline-block;
+    font-family: inherit;
+}
+
+a , a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+
+/*Body*/
+
+.body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+
+.products {
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.product-header {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.title-1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: #999999;
+    font-size: 18px;
+    font-weight: 400;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.product {
+    width: 270px;
+    height: 400px;
+    text-align: center;
+}
+
+.product-image {
+    height: 330px;
+    overflow: hidden;
+}
+
+.product-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.product-price {
+}
+.old-price {
+    color: #999999;
+    margin-right: 5px;
+}
+.new-price {
+    color: red;
+    font-weight: 700;
+}
+.button {
+    background-color: #fff;
+    border: 1px solid #F72464;
+    border-radius: 5px;
+    color: #777777;
+    padding: 16px 32px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #fef0f5;
+}
